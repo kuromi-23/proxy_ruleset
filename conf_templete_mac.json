@@ -46,7 +46,7 @@
             ],
             "mtu": 9000,
             "auto_route": true,
-            "strict_route": false
+            "strict_route": true
         }
     ],
     "outbounds": [
@@ -167,7 +167,7 @@
             "server": "default-dns"
         },
         "rules": [
-            {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
+            {"action": "sniff"},
             {
                 "type": "logical",
                 "mode": "or",
